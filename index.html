@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body id="main">
+        <header id="title">Kristen Schaal's Voice Tribute Page</header>
+        <div id="img-div">
+            <img id="image" src="images/mainPic.png" alt="kristen schaal">
+            <div id="img-caption">Kristen Schaal and some character's she voiced. From left to right, Kristen Schaal, Mabel Pines,
+            Sarah Lynn, and Louise Belcher.
+            </div>
+        </div>
+        <main id="tribute-info">
+            <p class="intro"><em>Kristen Schaal</em> is an American actress, comedian, and writer with a unique voice leading her to voice-act in many TV shows and movies of varying genres. 
+                This page is made in tribute of some of her most iconic voice acting roles. </p>
+            <div class="character-profile">
+                <img class="main-images" src="images/mabel.png" alt="Mabel Pines image" onclick="document.getElementById('mabelQuote').play();">
+                <div class="character-info">
+                    <h2>Mabel Pines</h2>
+                    <hr align="left">
+                    <ul>
+                        <li>Show: Gravity Falls</li>
+                        <li>Runtime: 2012-2016</li>
+                        <li>Quote: "Haha, nacho earrings, I'm hilarious!" </li>
+                    </ul>
+            </div>
+                <audio id="mabelQuote">
+                    <source src="images/audio/mabelQuote.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="character-profile">
+                <img class="main-images" src="images/sarah.png" alt="Sarah Lynn image" onclick="document.getElementById('sarahLynnQuote').play();">
+                <div class="character-info">
+                    <h2>Sarah Lynn</h2>
+                    <hr align="left">
+                    <ul>
+                        <li>Show: BoJack Horseman</li>
+                        <li>Runtime: 2014-2020</li>
+                        <li>Quote: "I swear you are like the only one I have left, I am this close to falling off the deep end. (laughs) I know I'm
+                        smiling right now, but the light inside me is dying..."
+                        </li>
+                    </ul>
+                </div>
+                <audio id="sarahLynnQuote">
+                    <source src="images/audio/sarahLynnQuote.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            
+            <div class="character-profile">
+                <img class="main-images" src="images/louise.jpeg" alt="Louise Belcher Iimage" onclick="document.getElementId('louiseQuote').play();">
+                <div class="character-info">
+                    <h2>Louise Belcher</h2>
+                    <hr align="left">
+                    <ul >
+                        <li>Show: Bob's Burgers</li>
+                        <li>Runtime: 2011-Present</li>
+                        <li>Quote: "Oh boy, poor old thing is too proud to say he's going deaf. (shouting) Just be deaf dad, it's fine, it's natural for your age."</li>
+                    </ul>
+                </div>
+                <audio id="louiseQuote">
+                    <source src="images/audio/louiseQuote.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <a id="tribute-link" href="https://www.imdb.com/name/nm1102891/" target="_blank">Click here to learn more about Kristen Schaal and her work</a>
+        </main>
+    </body>
+</html>
